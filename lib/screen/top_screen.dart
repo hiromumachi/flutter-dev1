@@ -60,6 +60,7 @@ class topState extends State<topscreen> {
     return Scaffold(
       appBar: AppBar(
         title: Text('冷蔵庫にある食材'),
+        automaticallyImplyLeading: false,
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,

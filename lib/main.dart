@@ -3,19 +3,22 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:refmanage/ocr.dart';
 export 'package:provider/provider.dart';
 import 'package:refmanage/screen/top_screen.dart';
+import 'firebase_options.dart';
 
 import 'screen/user_login_screen.dart';
 
 void main() async {
   // main関数内での非同期処理（下のFirebase.initializeApp）を可能にする処理
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
 
   runApp(AppState());
 }
 
 // アプリ画面を描画する前に、Firebaseの初期化処理を実行
-class AppState extends StatelessWidget{
+class AppState extends StatelessWidget {
   const AppState({Key? key}) : super(key: key);
 
   Future<FirebaseApp> _initialize() async {
