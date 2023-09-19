@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:google_mlkit_text_recognition/google_mlkit_text_recognition.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'dart:convert';
 
 class ocrPage extends StatefulWidget {
   // null safety対応のため、Keyに?をつけ、titleは初期値""を設定

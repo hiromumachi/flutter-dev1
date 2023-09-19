@@ -1,10 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:google_sign_in/google_sign_in.dart';
-import 'package:refmanage/main.dart';
-import 'package:refmanage/models/food_model.dart';
 import 'package:refmanage/provider/user_provider.dart';
-import 'package:refmanage/screen/top_screen.dart';
 
 class UserLoginScreen extends StatefulWidget {
   @override
